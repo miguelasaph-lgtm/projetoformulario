@@ -18,41 +18,86 @@
         </div>
         <div class="form-body">
             <h1 class="titulo-form">Venda fácil seu carro</h1>
-            <p>Descreva as características do seu carro e marque os adicionais que ele possui</p>
+            <p>Descreva as características do seu carro e marque os opcionais que ele possui.</p>
             <form>
                 <div class="caixaInputs">
-                    <label for="title">Título do anúncio <span class="obrigatorio">*</span></label>
-                    <input type="text" name="title" id="title" class="block" placeholder="Digite um titúlo para o anúncio">
+                    <label for="title">Título do anúncio <span class="campo-obrigatorio">*</span></label>
+                    <input type="text" name="title" id="title" class="block" placeholder="Digite um título para o anúncio">
                 </div>
                 <div class="caixaInputs">
-                    <label for="title">Preço <span class="obrigatorio">*</span></label>
-                    <input type="number" name="preco" id="preco" class="block" placeholder="Digite um preço">
+                    <label for="preco">Preço <span class="campo-obrigatorio">*</span></label>
+                    <input type="number" name="preco" id="preco" class="block" placeholder="Digite o preço">
                 </div>
                 <div class="caixaInputs">
-                    <label for="descricao">Descrição <span class="campo-obrigatorio"></span></label>
-                    <textarea name="descricao" id="descricao" class="block" placeholder="Digite a descrição do seu veículo"></textarea>
+                    <label for="descricao">Descrição <span class="campo-obrigatorio">*</span></label>
+                    <textarea name="descricao" id="descricao" class="block" placeholder="Digite a descrição de seu veículo"></textarea>
                 </div>
-                 <div class="caixaInputs">
-                    <label for="marca">Marca <span class="obrigatorio">*</span></label>
+                <div class="caixaInputs">
+                    <label for="marca">Marca <span class="campo-obrigatorio">*</span></label>
                     <input type="text" name="marca" id="marca" class="block" placeholder="Digite a marca">
                 </div>
                 <div class="caixaInputs">
-                    <label for="modelo">modelo <span class="obrigatorio">*</span></label>
+                    <label for="modelo">Modelo <span class="campo-obrigatorio">*</span></label>
                     <input type="text" name="modelo" id="modelo" class="block" placeholder="Digite o modelo">
                 </div>
                 <div class="caixaInputs">
-                    <label for="Kilometragem">Kilometragem<span class="obrigatorio">*</span></label>
+                    <label for="kilometragem">Kilometragem <span class="campo-obrigatorio">*</span></label>
                     <input type="number" name="kilometragem" id="kilometragem" class="block" placeholder="Digite a kilometragem">
                 </div>
                 <div class="caixaInputs">
-                    <label for="data-compra">Data de compra <span class="obrigatorio">*</span></label>
-                    <input type="date" name="date-compra" id="data-compra" class="block" placeholder="Digite o modelo">
+                    <label for="data-compra">Data de compra<span class="campo-obrigatorio">*</span></label>
+                    <input type="date" name="data-compra" id="data-compra" class="block" >
                 </div>
                 <div class="caixaInputs">
                     <p>Tipo de Câmbio: <span class="campo-obrigatorio">*</span></p>
                     <input type="radio" name="marcha" id="manual">
                     <label for="manual">Manual</label>
+                    <input type="radio" name="marcha" id="auto">
+                    <label for="auto">Automático</label>
                 </div>
+                <div class="caixaOpcional">
+                    <p>Opicional</p>
+                    <ul class="listaOpcionais">
+                        <li>
+                            <input type="checkbox" name="opcional[]" id="airbag" value="airbag">
+                            <label for="airbag">Airbag</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="opcional[]" id="ar condicionado" value="ar condicionado">
+                            <label for="ar condicionado">Ar Condicionado</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="opcional[]" id="camera de re" value="camera de re">
+                            <label for="camera de re">Camera de ré</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="alarme" id="alarme">
+                            <label for="alarme">Alarme</label>
+
+                        </li>
+                    </ul>
+                 </div>
+                 <div class="caixaOpcional">
+                    <p>Opicional</p>
+                    <ul class="listaOpcionais">
+                        <li>
+                            <input type="checkbox" name="opcional[]" id="assistentedepista" value="assistentedepista">
+                            <label for="assistentedepista">Assistente de Pista</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="opcional[]" id="partidasemchave"value="partidasemchave">
+                            <label for="partidasemchave">Partida sem Chave</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="opcional[]" id="integracaocomcelular" value="integracaocomcelular">
+                            <label for="integracaocomcelular">Integração com Celular</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="bancodecouro" id="bancodecouro">
+                            <label for="bancodecouro">Banco de Couro</label>
+                        </li>
+                    </ul>
+                 </div>
             </form>
         </div>
     </div>
