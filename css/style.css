@@ -33,7 +33,7 @@ textarea {
 .cabecalho {
     height: 160px;
     padding: 20px;
-    background-color: #a70404;
+    background-color: #3eb73a;
 } 
 
 .cabecalho h3 {
@@ -55,8 +55,8 @@ textarea {
 }
 
 .form-header p{
-    color: #910404;
-    border-bottom: 2px solid #a50606;
+    color: #3eb73a;
+    border-bottom: 2px solid #3ab74f;
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -100,7 +100,7 @@ textarea {
 }
 
 .btn-submit {
-    background-color: #a10505;
+    background-color: #3ab759;
     color: #fff;
     border: 2px solid transparent;
     width: 150px;
@@ -112,6 +112,13 @@ textarea {
 
 .btn-submit:hover {
     background-color: #fff;
-    color: #a50606;
-    border-color: #ad0505;
+    color: #44b73a;
+    border-color: #3ab76e;
+}
+
+hr {
+    margin-top:20px;
+    height: 3px;
+    background: linear-gradient(to right, transparent #d80835, transparent);
+    margin:20px 0;
 }
